@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileMenu = document.getElementById('mobileMenu');
 
   menuBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('open');
+    mobileMenu.classList.toggle('active');
   });
 
   document.querySelectorAll('.mobile-menu a').forEach(a => {
