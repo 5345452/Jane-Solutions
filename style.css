@@ -128,7 +128,7 @@ section {
   margin-bottom: 10px;
   text-align: center;
 }
-/* ========== BUTTONS ========== */
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -172,7 +172,7 @@ section {
   align-items: center;
   gap: 8px;
 }
-/* ========== NAVBAR ========== */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -222,7 +222,7 @@ section {
   }
 }
 
-/* ========== HERO ========== */
+
 .hero {
   height: 100vh;
   display: flex;
@@ -256,7 +256,7 @@ section {
   margin: 1rem 0 2rem;
 }
 
-/* ========== GRID CARDS ========== */
+
 .grid {
   display: grid;
   gap: 1.5rem;
@@ -313,7 +313,7 @@ section {
   margin: 0;
 }
 
-/* ========== CONTACT ========== */
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -326,7 +326,7 @@ section {
   }
 }
 
-/* ========== FOOTER ========== */
+
 footer {
   background: #f6f9ff;
   padding: 2rem 0;
@@ -339,8 +339,6 @@ footer .inner {
   gap: 1rem;
 }
 
-
-/* ========== ANIMATIONS ========== */
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -491,37 +489,70 @@ footer .inner {
     display: none;
   }
 }
-.emai-card{
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  background: 1px solid #e6ecf5;
-  border-radius: 20px;
-  padding: 25px;
-  margin-top: 20px
+.email-card{
+    display:flex;
+    align-items:center;
+    gap:20px;
+
+    width:100%;
+    max-width:450px;
+
+    margin:20px auto;
+
+    padding:20px;
+
+    background:#fff;
+    border:1px solid #dbe3ef;
+    border-radius:20px;
+
+    box-sizing:border-box;
 }
+
 .email-icon{
-  width: 70px;
-  height: 70px;
-  background: #eaf2ff;
-  align-items: center;
-  justify-content: center;
-  border-radius: 18px;
-  font-size: 2rem;
+    width:70px;
+    height:70px;
+    min-width:70px;
 
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:#eaf2ff;
+    border-radius:18px;
+
+    color:#2563eb;
+    font-size:2rem;
 }
+
+.email-content{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
 .email-content p{
-  margin: 0;
-  color: #6b7280;
-  font-size: 2rem;
-
+    margin:0;
+    color:#6b7280;
+    font-size:0.95rem;
 }
-.email-contenta{
-  color: #0b1220;
-  font-size: 1.3rem;
-  font-weight: 700;
-  text-decoration: none;
-  word-break: break-word;
+
+.email-content a{
+    margin-top:4px;
+    text-decoration:none;
+    color:#0b1220;
+    font-size:1.3rem;
+    font-weight:700;
+    word-break:break-word;
+}
+
+@media (max-width:768px){
+    .email-card{
+        max-width:100%;
+    }
+
+    .email-content a{
+        font-size:1.1rem;
+    }
 }
 .footer-icons{
   display: flex;
