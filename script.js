@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  alert("JavaScript is working!");
 
-  // ---------- NAVBAR ----------
+
+  
   const navbar = document.getElementById('navbar');
 
   window.addEventListener('scroll', () => {
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     else navbar.classList.remove('scrolled');
   });
 
-  // ---------- MOBILE MENU ----------
+  
   const menuBtn = document.getElementById('menuBtn');
   const mobileMenu = document.getElementById('mobileMenu');
 
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     a.addEventListener('click', () => mobileMenu.classList.remove('open'));
   });
 
-  // ---------- SLIDESHOW (FIXED) ----------
+  
   const slides = document.querySelectorAll('.slide');
   let current = 0;
 
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 5000);
   }
 
-  // ---------- SMOOTH SCROLL ----------
+  
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', (e) => {
       const id = link.getAttribute('href');
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // ---------- FORM ----------
+  
   const PHONE_WA = '254115134329';
   const form = document.getElementById('contactForm');
   const formMsg = document.getElementById('formMsg');
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // ---------- YEAR ----------
+
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
